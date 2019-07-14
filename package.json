@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tips",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -11,6 +11,10 @@
     "tips",
     "prompt"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majiang666/react-simple-tips"
+  },
   "author": "majiang",
   "license": "MIT",
   "scripts": {
