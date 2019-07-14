@@ -1,0 +1,20 @@
+.tips{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    word-break: break-all;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    width:100%;
+}
+.tips-box{
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    color:#fff;
+    padding:10px;
+    border-radius:30px;
+    line-height: 22px;
+    display: inline-block;
+    margin: 0 15px;
+}
