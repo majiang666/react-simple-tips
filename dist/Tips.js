@@ -17,22 +17,14 @@ var Tips = function Tips(_ref) {
   var showFlag = _ref.showFlag,
       location = _ref.location,
       distance = _ref.distance,
-      tipsMsg = _ref.tipsMsg,
-      times = _ref.times;
+      tipsMsg = _ref.tipsMsg;
   var styles = {};
-
-  if (showFlag) {
-    setTimeout(function () {
-      document.querySelector('.tips').remove();
-    }, times && typeof times === 'number' ? times : 2000);
-  }
-
   location === 'center' ? styles.location = {
     top: '50%',
     transform: 'translateY(-50%)'
   } : styles.location = _defineProperty({}, "".concat(location ? location : 'bottom'), distance ? distance : '50px');
   return (showFlag ? showFlag : false) ? _react.default.createElement("div", {
-    className: "tips",
+    className: "tips fadeInUp",
     style: styles.location
   }, _react.default.createElement("span", {
     className: "tips-box"

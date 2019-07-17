@@ -1,12 +1,7 @@
 import React from "react";
 import "./Tips.css";
-const Tips = ({ showFlag,location,distance,tipsMsg,times }) => {
+const Tips = ({ showFlag,location,distance,tipsMsg }) => {
   let styles = {};
-  if(showFlag){
-    setTimeout(() => {
-      document.querySelector('.tips').remove();
-    }, times && (typeof times === 'number')  ? times : 2000);
-  }
   (location === 'center') ? 
     styles.location = {
       top: '50%',
@@ -19,7 +14,7 @@ const Tips = ({ showFlag,location,distance,tipsMsg,times }) => {
   return(
     (showFlag ? showFlag : false) ? 
     (
-      <div className="tips" style={ styles.location }>
+      <div className="tips fadeInUp" style={ styles.location }>
         <span className="tips-box">
           {tipsMsg ? tipsMsg : '提示'}
         </span>
